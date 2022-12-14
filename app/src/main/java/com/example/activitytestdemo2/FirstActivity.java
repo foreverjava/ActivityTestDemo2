@@ -18,8 +18,8 @@ public class FirstActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(FirstActivity.this,
-//                        "這是我的第一個android程序  ", Toast.LENGTH_LONG).show();
+                Toast.makeText(FirstActivity.this,
+                        "這是我的第一個android程序  ", Toast.LENGTH_LONG).show();
             }
         });
 
