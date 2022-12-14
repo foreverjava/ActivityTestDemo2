@@ -13,13 +13,27 @@
         android:theme="@style/Theme.ActivityTestDemo2"
         tools:targetApi="31">
         <activity
+            android:name=".ThirdActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Dialog.Nobar">
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FirstActivity"
             android:exported="true"
-            android:label="This is FirstActivity"><!-- 新增代码-->
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
+            android:label="This is FirstActivity"> <!-- 新增代码 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
